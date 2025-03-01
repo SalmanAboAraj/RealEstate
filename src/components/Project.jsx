@@ -1,6 +1,54 @@
 import React, { useEffect } from "react";
-import { assets, projectsData } from "../assets/assets";
+import project_img_1 from "../assets/project_img_1.jpg";
+import project_img_2 from "../assets/project_img_2.jpg";
+import project_img_3 from "../assets/project_img_3.jpg";
+import project_img_4 from "../assets/project_img_4.jpg";
+import project_img_5 from "../assets/project_img_5.jpg";  
+import project_img_6 from "../assets/project_img_6.jpg";
+import left_arrow from "../assets/left_arrow.svg";
+import right_arrow from "../assets/right_arrow.svg";
 const Project = () => {
+
+const projectsData = [
+    {
+      title: "Skyline Haven",
+      price: "$2,50,000",
+      location: "California",
+      image: project_img_1
+    },
+    {
+      title: "Vista Verde",
+      price: "$2,50,000",
+      location: "San Francisco",
+      image: project_img_2
+    },
+    {
+      title: "Serenity Suites",
+      price: "$2,50,000",
+      location: "Chicago",
+      image: project_img_3
+    },
+    {
+      title: "Central Square",
+      price: "$2,50,000",
+      location: "Los Angeles",
+      image: project_img_4
+    },
+    {
+      title: "Vista Verde",
+      price: "$2,50,000",
+      location: "San Francisco",
+      image: project_img_5
+    },
+    {
+      title: "Serenity Suites",
+      price: "$2,50,000",
+      location: "Chicago",
+      image: project_img_6
+    },
+    
+  ];
+
 
     const [currentIndex, setCurrentIndex] = React.useState(0);
     const [cardsToShow, setCardsToShow] = React.useState(1);
@@ -45,13 +93,13 @@ const Project = () => {
           className="p-3 bg-gray-200 rounded mr-2"
           aria-label="مشروع سابق" onClick={prevProject}
         >
-          <img src={assets.left_arrow} alt="سابق" />
+          <img src={left_arrow} alt="سابق" />
         </button>
         <button
           className="p-3 bg-gray-200 rounded mr-2"
           aria-label="مشروع تالي" onClick={nextProject}
         >
-          <img src={assets.right_arrow} alt="تالي" />
+          <img src={right_arrow} alt="تالي" />
         </button>
       </div>
 

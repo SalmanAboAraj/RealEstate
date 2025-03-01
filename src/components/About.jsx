@@ -1,5 +1,5 @@
 import React from "react";
-import { assets } from "../assets/assets";
+import brand_img from "../assets/brand_img.png";
 
 const About = () => {
   return (
@@ -18,7 +18,7 @@ const About = () => {
       </p>
       <div className="flex flex-col md:flex-row items-center md:items-start md:gap-20">
         <img
-          src={assets.brand_img}
+          src={brand_img}
           alt=""
           className="w-full sm:w-1/2 max-w-lg"
         />
