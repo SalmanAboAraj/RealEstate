@@ -1,0 +1,6 @@
+@import url("https://fonts.googleapis.com/css2?family=Changa:wght@200..800&family=Reem+Kufi&display=swap");
+@import "tailwindcss";
+
+* {
+  font-family: Outfit;
+}
