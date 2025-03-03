@@ -14,7 +14,7 @@ const Header = () => {
           أبحث عن المنزل الذي يناسب أحلامك
         </h2>
         <div className="flex justify-center gap-5 mt-10">
-          <a href="#Projects" className="border border-white px-8 py-3 rounded">
+          <a href="#Project" className="border border-white px-8 py-3 rounded">
             المشاريع
           </a>
           <a href="#Contact" className="bg-blue-500 px-8 py-3 rounded">
